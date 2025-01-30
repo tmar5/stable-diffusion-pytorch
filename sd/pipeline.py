@@ -99,7 +99,7 @@ def generate(
         
         generator = torch.Generator(device=device)
         if seed is None:
-            generate.seed()
+            generator.seed()
         else:
             generator.manual_seed(seed)
 
